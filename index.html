@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/milogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+<!--------------------------------------------------------->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Juan</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+<!--------------------------------------------------------->
+    <!-- SECCION INICIO -->
+<!--------------------------------------------------------->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/mee.png" alt="">
+            </div>
+            <h1>Juan Diego García</h1>
+            <h2><span class="typed"></span></h2>
+            <div class="redes">
+                <a href="https://github.com/JuanDiegoGarciaA" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/juan-diego-garcia-albornoz-436344213/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        
+            </div>
+        </div>
+    </section>
+<!--------------------------------------------------------->
+
+<!-- SECCION SOBRE MI -->
+<!--------------------------------------------------------->
+<section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p><span>Hola, soy Juan Diego Garcia.</span> Soy desarrollador web Full Stack y apasionado del Front-End, amante a los diseños minimalistas simples y modernos. Soy una persona autodidacta y siempre que puedo intento aprender nuevas tecnologías.
+            Actualmente me encuentro en la etapa final de mi carrera universitaria, y durante estos últimos años he desarrollado proyectos, los cuales me han ayudado a profundizar mis conocimientos. Estoy buscando formar parte de un proyecto que me permita dejar mi marca en la web y continuar creciendo profesionalmente.</p>
+
+        <div class="fila">
+            <!-- datos personales -->
+            <div class="col">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Nacimiento</strong>
+                        10-01-2001
+                    </li>
+                    <li>
+                        <strong>Teléfono</strong>
+                        (+57) 320 4894873
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        jdiegogarcia0110@gmail.com
+                    </li>
+                    <li>
+                        <strong>Edad</strong>
+                        21
+                    </li>
+                    <li>
+                        <strong>Ciudad</strong>
+                        Bogotá D.C. Colombia
+                    </li>
+                    <li>
+                        <strong>Cargo</strong>
+                        <span>Desarrollador</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- intereses -->
+            <div class="col">
+                <h3>Intereses</h3>
+                <div class="contenedor-intereses">
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>JUEGOS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-headphones"></i>
+                        <span>MUSICA</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>VIAJAR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-sharp fa-solid fa-chalkboard-user"></i>
+                        <span>AUTODIDACTA</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-person-hiking"></i>
+                        <span>DEPORTE</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-sharp fa-solid fa-computer"></i>
+                        <span>EXPLORAR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-camera"></i>
+                        <span>FOTOGRAFIA</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <span>DISEÑO</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <a download="CV" href="HV-Juan Diego García Albornoz-2022-2.pdf">
+        <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button>
+        </a>
+    </div>
+</section>
+<!--------------------------------------------------------->
+    
+<!-- SECCION SKILLS -->
+<!--------------------------------------------------------->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Ps-Ai-Pr-Xd</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node.js</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Angular</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GIT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL Server</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Animación 3D</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--------------------------------------------------------->
+
+<!-- SECCION CURRICULUM -->
+<!--------------------------------------------------------->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>Ingeniería de Sistemas</h4>
+                    <span class="casa">UNISANGIL</span>
+                    <span class="fecha">2018 - 2022</span>
+                    <p>Desarrolle mi carrera de ingeniería de sistemas en la Fundación Universitaria de San Gil-UNISANGIL. Obteniendo excelentes notas durante toda mi formación académica</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Curso JavaScript</h4>
+                    <span class="casa">Platzi</span>
+                    <span class="fecha">2021 - 2021</span>
+                    <p>Pude fortalecer diferentes conocimientos y sentar bases en la programación orientada a objetos con JavaScript luego de haber aprobado el curso de JavaScript dentro de la plataforma de platzi, el curso tuvo duración de aproximadamente mes y medio.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Curso Angular</h4>
+                    <span class="casa">Udemy</span>
+                    <span class="fecha">2022 - 2022</span>
+                    <p>El curso de crear una aplicación real en angular me ayudo a generar nuevos conocimientos en JavaScript, TypeScript, CSS3, HTML5, Node.js entre otras herramientas, logrando crear un clon de Spotify totalmente funcional y consumiendo un API REST.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+                <h3>Experiencia de trabajo</h3>
+                <div class="item der">
+                    <h4>Full Stack Developer</h4>
+                    <span class="casa">Instituto Alexander Von Humboldt</span>
+                    <span class="fecha">2022 - 2022</span>
+                    <p>Desarrollo de una aplicación para consulta de especies en la base de datos con descargas de informes en 
+                        xls y generación de inventario, además de la realización de un login totalmente funcional con registro y 
+                        recuperación de contraseña todo utilizando cookies y JWT. 
+                        Análisis de la problemática, diseño UI/UX, levantamiento de requisitos funcionales y no funcionales, 
+                        estructuración de base de datos MySQL normalización e inserción masiva de más de 450.000 registros</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>FreeLancer</h4>
+                    <span class="casa">Tattoo Studio ART-17</span>
+                    <span class="fecha">2021 - 2021</span>
+                    <p>Desarrollo de una pagina web con diferentes vistas de diseños y trabajos realizados por el artista, con un apartado de preguntas frecuentes y una vista para agendar citas en el estudio de tatuajes por medio de correo electrónico.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Diseño</h4>
+                    <span class="casa">FreeLancer</span>
+                    <span class="fecha">2018 - 2022</span>
+                    <p>He desarrollado diferentes logos para varias microempresas de mi ciudad, también he realizado la grabación y edición de varios videos los cuales estas microempresas han utilizado como videomarketing para sus compañías. Por otro lado he generado animaciones 3D sobre el cuidado del medio ambiente y algunos cortos de película de terror. </p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--------------------------------------------------------->
+
+<!-- SECCION PORTFOLIO -->
+<!--------------------------------------------------------->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+        </div>
+
+        <section class="trabajos" id="trabajos">
+            <h2>Mis Trabajos</h2>
+    
+            <nav>
+                <a href="javascript:void(0)" class="borde" id="item" onclick="verCategoria('item')">Todos</a>
+                <a href="javascript:void(0)" class="" id="disenio" onclick="verCategoria('disenio')">Diseño</a>
+                <a href="javascript:void(0)" class="" id="programacion" onclick="verCategoria('programacion')">Programación</a>
+                <a href="javascript:void(0)" class="" id="animaciones" onclick="verCategoria('animaciones')">Animaciones</a>
+            </nav>
+    
+            <div class="galeria">
+                <div class="item disenio">
+                    <img src="img/Diseño1.jpg" alt="">
+                    <div class="info">
+                        <h3>Logo ART-17</h3>
+                        <span>Illustrator</span><span>Photoshop</span>
+                    </div>
+                </div>
+                <div class="item programacion">
+                    <img src="img/Programacion1.png" alt="">
+                    <div class="info">
+                        <h3>Proyecto SICREB</h3>
+                        <span>EJS</span><span>CSS3</span><span>Bootstrap5</span><span>JavaScript</span><span>Node.js</span><span>MySQL</span><span>Express.js</span><span>Adobe.Xd</span>
+                        <a href="https://github.com/JuanDiegoGarciaA/Proyecto-SICREB" target="_blank">Ver Trabajo</a>
+                    </div>
+                </div>
+                <div class="item animaciones">
+                    <img src="img/animacion1.png" alt="">
+                    <div class="info">
+                        <h3>Animación Calentamiento Global</h3>
+                        <span>Blender</span><span>Illustrator</span><span>Premiere Pro</span>
+                        <a href="https://youtu.be/m2WLTRkvBiw" target="_blank">Ver Trabajo</a>
+                    </div>
+                </div>
+                <div class="item disenio">
+                    <img src="img/diseño2.png" alt="">
+                    <div class="info">
+                        <h3>Diseño 3D Jefe Maestro</h3>
+                        <span>Blender</span><span>Photoshop</span><span>Illustrator</span>
+                    </div>
+                </div>
+                <div class="item animaciones">
+                    <img src="img/animacion2.png" alt="">
+                    <div class="info">
+                        <h3>CORRE-Terror</h3>
+                        <span>Blender</span><span>Illustrator</span><span>Premiere Pro</span>
+                        <a href="https://youtu.be/V1O5JQelxwg" target="_blank">Ver Trabajo</a>
+                    </div>
+                </div>
+                <div class="item programacion">
+                    <img src="img/Programacion2.png" alt="">
+                    <div class="info">
+                        <h3>Clon Spotify-Angular</h3>
+                        <span>Angular</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>TypeScript</span><span>HTML5</span>
+                        <a href="https://github.com/JuanDiegoGarciaA/Spotify" target="_blank">Ver Trabajo</a>
+                    </div>
+                </div>
+                <div class="item disenio">
+                    <img src="img/diseño3.png" alt="">
+                    <div class="info">
+                        <h3>Tarjeta</h3>
+                        <span>Illustrator</span><span>Photoshop</span>
+                    </div>
+                </div>
+                <div class="item programacion">
+                    <img src="img/Programacion3.png" alt="">
+                    <div class="info">
+                        <h3>Pagina ART-17</h3>
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Adobe.Xd</span>
+                        <a href="https://studio-art-17.netlify.app/index.html" target="_blank">Ver Trabajo</a>
+                        <a href="https://github.com/JuanDiegoGarciaA/Studio_Art-17" target="_blank">Ver Codigo</a>
+                    </div>
+                </div>
+                <div class="item programacion">
+                    <img src="img/Programacion4.png" alt="">
+                    <div class="info">
+                        <h3>APP-pomodoro</h3>
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        <a href="https://github.com/JuanDiegoGarciaA/Pomodoro" target="_blank">Ver Trabajo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+<!--------------------------------------------------------->
+
+<!-- SECCION CONTACTO -->
+<!--------------------------------------------------------->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form   action="https://formspree.io/f/xgeqnrno" method="POST">
+                        <input type="text" placeholder="Tú Nombre" name="nombre">
+                        <input type="text" placeholder="Número telefónico" name="Numero">
+                        <input type="text" placeholder="Dirección de correo" name="correo">
+                        <input type="text" placeholder="Tema" name="tema">
+                        <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                </div>
+            </div>
+            <button type="submit">
+                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+            </button>
+            </form>
+        </div>
+    </section>
+<!--------------------------------------------------------->
+
+<!-- footer -->
+<!--------------------------------------------------------->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/JuanDiegoGarciaA" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/juan-diego-garcia-albornoz-436344213/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <p>Sitio Diseñado por Juan Diego Garcia</p>
+        </div>
+    </footer>
+<!--------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
