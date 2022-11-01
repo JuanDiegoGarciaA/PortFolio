@@ -414,21 +414,27 @@
                 <!-- Formulario -->
                 <div class="col">
                     <form id="my-form" action="https://formspree.io/f/xgeqnrno" method="POST">
-                        <input type="text" placeholder="Tú Nombre" name="nombre" required>
-                        <input type="text" placeholder="Número telefónico" name="Numero" required>
-                        <input type="text" placeholder="Dirección de correo" name="correo" required>
-                        <input type="text" placeholder="Tema" name="tema" required>
-                        <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <input type="text" id="Novacio" placeholder="Tú Nombre" name="nombre" required>
+                        <input type="text" id="Novacio" placeholder="Número telefónico" name="Numero" required>
+                        <input type="text" id="Novacio" placeholder="Dirección de correo" name="correo" required>
+                        <input type="text" id="Novacio" placeholder="Tema" name="tema" required>
+                        <textarea name="Mensaje" id="Novacio" cols="30" rows="10" placeholder="Mensaje" required></textarea>
                 </div>
             </div>
-            <button id="my-form-status" type="submit">
+            <button id="my-form-status" type="submit" onclick="validar()">
                 Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
                 <span class="overlay"></span>
             </button>
             </form>
             <script>
                 var form = document.getElementById("my-form");
-                
+                var Vacio = false
+                function validar(){
+                    Novacio = document.getElementById('Novacio').value
+                    if(Novacio.length==0 || /^\s+$/.test(Novacio)){
+                    Vacio=true
+                    }
+                }       
                 async function handleSubmit(event) {
                   event.preventDefault();
                   var status = document.getElementById("my-form-status");
@@ -440,7 +446,7 @@
                         'Accept': 'application/json'
                     }
                   }).then(response => {
-                    if (response.ok) {
+                    if (response.ok && Vacio==false) {
                       status.innerHTML = "Tu mensaje ha sido enviado!";
                       form.reset()
                     } else {
