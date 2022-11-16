@@ -119,6 +119,10 @@ html{
     background-color: #1CB698;
 }
 
+.contenedor-img{
+    margin-top: 100px;
+}
+
 /*SECCION SOBRE MÍ*/
 .sobremi{
     background-color: #1e2326;
