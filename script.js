@@ -82,3 +82,21 @@ function verCategoria(cat){
     const itemSeleccionado = document.getElementById(cat);
     itemSeleccionado.className = "borde";
 }
+
+//Calcula edad.
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtén la fecha actual
+    var fechaActual = new Date();
+
+    // Define tu fecha de nacimiento
+    var fechaNacimiento = new Date("2001-01-10");
+
+    // Calcula la diferencia en milisegundos
+    var diferenciaTiempo = fechaActual - fechaNacimiento;
+
+    // Calcula la edad en años
+    var edad = Math.floor(diferenciaTiempo / (1000 * 60 * 60 * 24 * 365.25));
+
+    // Actualiza el contenido del elemento span con la edad calculada
+    document.getElementById("edad-valor").textContent = edad.toString();
+});
